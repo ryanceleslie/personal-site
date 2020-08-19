@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Ryan Celeslie", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    @*<li>@Html.ActionLink("About", "About", "Home")</li>*@
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                </ul>
+                @*@Html.Partial("_LoginPartial")*@
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <div class="clear-fix">
+                <section>
+                    <b>Microsoft</b>
+                    <ul>
+                        <li><a href="http://www.msdn.com" target="_blank">MSDN</a></li>
+                        <li><a href="http://www.visualstudio.com" target="_blank">Visual Studio</a></li>
+                        <li><a href="http://www.asp.net" target="_blank">ASP.NET</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <b>Tech</b>
+                    <ul>
+                        <li><a href="http://www.arstechnica.com" target="_blank">Ars Technica</a></li>
+                        <li><a href="http://www.reddit.com" target="_blank">Reddit</a></li>
+                        <li><a href="http://www.wired.com" target="_blank">Wired</a></li>
+                        <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <b>Education</b>
+                    <ul>
+                        <li><a href="http://code.org" target="_blank">code.org</a></li>
+                        <li><a href="http://www.codecademy.com/" target="_blank">codecademy</a></li>
+                        <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
+                        <li><a href="https://www.pluralsight.com/" target="_blank">PluralSight</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <b>Blogs</b>
+                    <ul>
+                        <li><a href="https://weblogs.asp.net/scottgu" target="_blank">Scott Guthrie</a></li>
+                        <li><a href="http://www.toddklindt.com/" target="_blank">Todd Klindt</a></li>
+                        <li><a href="http://www.hanselman.com/blog/" target="_blank">Scott Hanselman</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <b>Charity</b>
+                    <ul>
+                        <li><a href="http://givecamp.org/" target="_blank">Give Camp</a></li>
+                    </ul>
+                </section>
+            </div>
+        </footer>
+        <p class="copyright">&copy; @DateTime.Now.Year - Ryan Celeslie</p>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,83 @@
+﻿/* custom css */
+
+hr {
+    margin: 50px 0 25px 0;
+}
+img, video {
+    /*width: 100% !important;*/
+}
+.img-container {
+    max-width: 500px;
+}
+
+footer {
+     max-width: 100%;
+     background-color: rgba(34, 34, 34, 1);
+     color: white;
+     padding: 15px;
+}
+    
+footer section {
+    width: 200px;
+    float: left;
+}
+
+footer section ul {
+    list-style: none;
+    margin: 5px 0 0 0;
+    padding: 0;
+}
+
+footer section ul li {
+    width: 160px;
+    float: left;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.copyright {
+    margin: 25px 0;
+}
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.clear-fix:before,
+.clear-fix:after {
+    content: " ";
+    display: table;
+}
+
+.clear-fix:after {
+    clear: both;
+}
