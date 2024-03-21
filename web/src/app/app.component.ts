@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
-import { faBriefcase, faUniversity } from '@fortawesome/free-solid-svg-icons';
 
 
 @Component({
@@ -13,10 +12,4 @@ import { faBriefcase, faUniversity } from '@fortawesome/free-solid-svg-icons';
 })
 export class AppComponent {
   title = 'Ryan Celeslie';
-  constructor(library: FaIconLibrary) {
-    library.addIcons(
-      faBriefcase,
-      faUniversity
-    );
-  }
 }
