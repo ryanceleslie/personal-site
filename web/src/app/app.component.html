@@ -1,0 +1,211 @@
+<main class="profile-page">
+  <section class="relative block h-52 lg:h-96" >
+    <div
+      class="absolute top-0 w-full h-full bg-center bg-cover"
+      style='background-image: url("../assets/earth.jpg");'>
+      <span id="blackOverlay" class="w-full h-full absolute opacity-50 bg-black"></span>
+    </div>
+  </section>
+
+  <section class="relative py-16 bg-gray-300">
+    <div class="container mx-auto px-4">
+      <div class="relative flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64">
+        <div class="px-6">
+          <div class="flex flex-wrap text-center">
+
+            <!-- socials -->
+            <div class="w-full lg:w-5/12">
+              <div class="flex pt-4 justify-center lg:justify-start">
+                <div class="p-2 text-center">
+                  <a
+                    class="bg-[#1da1f2] active:bg-[#13679c] uppercase text-white font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none"
+                    type="button"
+                    style="transition: all 0.15s ease 0s;"
+                    href="https://twitter.com/ryanceleslie" target="_blank">
+                    <i class="fab fa-twitter"></i>&nbsp;Twitter
+                  </a>
+                </div>
+                <div class="p-2 text-center">
+                  <a
+                    class="bg-[#24292E] active:bg-[#08090a] uppercase text-white font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none"
+                    type="button"
+                    style="transition: all 0.15s ease 0s;"
+                    href="https://github.com/ryanceleslie" target="_blank">
+                    <i class="fab fa-github"></i>&nbsp;Github
+                  </a>
+                </div>
+                <div class="p-2 text-center">
+                  <a
+                    class="bg-[#0077b5] active:bg-[#00344f] uppercase text-white font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none"
+                    type="button"
+                    style="transition: all 0.15s ease 0s;"
+                    href="https://www.linkedin.com/in/ryanceleslie/" target="_blank">
+                    <i class="fab fa-linkedin"></i>&nbsp;LinkedIn
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- photo -->
+            <div class="w-full lg:w-2/12 flex justify-center">
+              <div class="relative">
+                <img
+                  alt="..."
+                  src="../assets/me-2023.png"
+                  class="shadow-xl rounded-full border-none lg:-mt-16"
+                  style="max-width: 150px;"
+                />
+              </div>
+            </div>
+
+            <!-- contact -->
+            <div class="w-full lg:w-5/12">
+              <div class="flex pt-4 justify-center lg:justify-end">
+                <div class="p-2 text-center">
+                  <a
+                    class="bg-[#ED2224] active:bg-[#570b0c] uppercase text-white font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none"
+                    type="button"
+                    style="transition: all 0.15s ease 0s;"
+                    href="../assets/Resume_v4.pdf" target="_blank">
+                    <i class="fas fa-file"></i>&nbsp;Resume
+                  </a>
+                </div>
+                <div class="p-2 text-center">
+                  <a
+                    class="bg-[#28a745] active:bg-[#145423] uppercase text-white font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1"
+                    type="button"
+                    style="transition: all 0.15s ease 0s;"
+                    (click)="contactDetails()">
+                    <i class="fa-solid fa-phone"></i>&nbsp;Contact
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <h3 class="text-4xl font-semibold leading-normal mb-2 text-gray-800">
+              Ryan Celeslie
+            </h3>
+            <div class="text-sm leading-normal mt-0 mb-2 text-gray-500 font-bold uppercase">
+              <i class="fas fa-map-marker-alt mr-2 text-lg text-gray-500"></i>
+              Cincinnati, Ohio
+            </div>
+            <div class="mb-2 text-gray-700">
+              <i class="fas fa-briefcase mr-2 text-lg text-gray-500"></i>Senior Director of Software Engineering - Servant Leader - Scrum Evangelist
+            </div>
+            <div class="mb-2 text-gray-700">
+              <i class="fa-solid fa-school mr-2 text-lg text-gray-500"></i>University of Missouri St. Louis
+            </div>
+          </div>
+
+          <div class="mt-8 py-8 border-t border-gray-300 text-center">
+            <div class="flex flex-wrap justify-center">
+              <div class="w-9/12">
+                <p class="text-lg leading-relaxed text-gray-800">
+                  Enthusiastic leader with a proven track record in leadership and driving software engineering excellence. Experienced in transitioning to microservices architecture, enhancing software quality, and streamlining development processes. Keen on fostering a culture of ownership and accountability while prioritizing customer feedback and stakeholder satisfaction. Skilled in strategic planning, agile methodologies, and technical innovation; ready to optimize software engineering practices in alignment with evolving industry standards.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- strengths -->
+          <div class="flex flex-wrap justify-center">
+            <!-- card 1 -->
+            <div class="p-4 max-w-sm">
+              <div class="flex rounded-lg h-full dark:bg-gray-800 bg-teal-400 p-8 flex-col">
+                  <div class="flex items-center mb-3">
+                    <i class="fa-solid fa-users mr-2 text-lg text-gray-500"></i>
+                    <h2 class="text-white dark:text-white text-lg font-medium">Servant Leadership</h2>
+                  </div>
+                  <div class="flex flex-col justify-between flex-grow">
+                    <p class="leading-relaxed text-base text-white dark:text-gray-300">
+                      Leading teams of cross-discipline professionals, fostering growth, fulfillment, and technical excellence at a scale of 70+ employees.
+                    </p>
+                  </div>
+              </div>
+            </div>
+
+            <!-- card 2 -->
+            <div class="p-4 max-w-sm">
+              <div class="flex rounded-lg h-full dark:bg-gray-800 bg-teal-400 p-8 flex-col">
+                  <div class="flex items-center mb-3">
+                    <i class="fa-solid fa-arrow-rotate-left mr-2 text-lg text-gray-500"></i>
+                    <h2 class="text-white dark:text-white text-lg font-medium">Scrum Mindset</h2>
+                  </div>
+                  <div class="flex flex-col justify-between flex-grow">
+                    <p class="leading-relaxed text-base text-white dark:text-gray-300">
+                      Regularly achieve a +95% on sprint commitments, showcasing a culture of ownership, accountability, and prioritizing customer feedback.
+                    </p>
+                  </div>
+              </div>
+            </div>
+
+            <!-- card 3 -->
+            <div class="p-4 max-w-sm">
+              <div class="flex rounded-lg h-full dark:bg-gray-800 bg-teal-400 p-8 flex-col">
+                  <div class="flex items-center mb-3">
+                    <i class="fa-solid fa-star-half-stroke mr-2 text-lg text-gray-500"></i>
+                    <h2 class="text-white dark:text-white text-lg font-medium">Strategic & Technical Planning</h2>
+                  </div>
+                  <div class="flex flex-col justify-between flex-grow">
+                    <p class="leading-relaxed text-base text-white dark:text-gray-300">
+                      Instrumental in designing software systems, including microservices and domain decomposition.
+                    </p>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- achievements -->
+          <div class="flex flex-wrap justify-center pb-10">
+            <!-- card 1 -->
+            <div class="p-4 max-w-sm">
+              <div class="flex rounded-lg h-full dark:bg-gray-600 bg-teal-200 p-8 flex-col">
+                  <div class="flex items-center mb-3">
+                    <i class="fa-solid fa-medal mr-2 text-lg text-gray-300"></i>
+                    <h2 class="text-white dark:text-white text-lg font-medium">Barry-Wehmiller Leadership Award</h2>
+                  </div>
+                  <div class="flex flex-col justify-between flex-grow">
+                    <p class="leading-relaxed text-base text-white dark:text-gray-300">
+                      Leadership award that recognizes team members whose thoughts, words, and action embody the tenets of people centric leadership
+                    </p>
+                  </div>
+              </div>
+            </div>
+            
+            <!-- card 2 -->
+            <div class="p-4 max-w-sm">
+              <div class="flex rounded-lg h-full dark:bg-gray-600 bg-teal-200 p-8 flex-col">
+                  <div class="flex items-center mb-3">
+                    <i class="fab fa-microsoft mr-2 text-lg text-gray-300"></i>
+                    <h2 class="text-white dark:text-white text-lg font-medium">Microsoft TEALS Program</h2>
+                  </div>
+                  <div class="flex flex-col justify-between flex-grow">
+                    <p class="leading-relaxed text-base text-white dark:text-gray-300">
+                      Volunteered in computer science courses at Jennings School District (MO) with an emphasis on programming languages, advising course materials, and evaluating assignments
+                    </p>
+                  </div>
+              </div>
+            </div>
+            
+            <!-- card 3 -->
+            <div class="p-4 max-w-sm">
+              <div class="flex rounded-lg h-full dark:bg-gray-600 bg-teal-200 p-8 flex-col">
+                  <div class="flex items-center mb-3">
+                    <i class="fa-solid fa-graduation-cap mr-2 text-lg text-gray-300"></i>
+                    <h2 class="text-white dark:text-white text-lg font-medium">NKU Informatics Program</h2>
+                  </div>
+                  <div class="flex flex-col justify-between flex-grow">
+                    <p class="leading-relaxed text-base text-white dark:text-gray-300">
+                      Volunteered as part of the Government, Corporate and Foundation Engagement (GCFE) in the College of Informatics; evaluated student projects and presented real life scenarios, and real projects as examples
+                    </p>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
