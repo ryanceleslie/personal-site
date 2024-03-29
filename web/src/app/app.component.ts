@@ -7,6 +7,7 @@ import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dial
 
 // Custom imports
 import { ContactComponent } from './contact/contact.component';
+import { Title } from '@angular/platform-browser';
 
 
 @Component({
@@ -19,7 +20,11 @@ import { ContactComponent } from './contact/contact.component';
 export class AppComponent {
   title = 'Ryan Celeslie';
 
-  constructor(public dialog: MatDialog) {}
+  constructor(public dialog: MatDialog, private titleService: Title) {}
+
+  ngOnInit() {
+    this.titleService.setTitle(this.title)
+  }
 
   public async contactDetails(){
     const dialogRef = this.dialog.open(ContactComponent, {
